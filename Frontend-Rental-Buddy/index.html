@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Buddy</title>
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link To StyleSheets -->
+    <link rel="stylesheet" href="styles//Navbar/navbar.css">
+    <link rel="stylesheet" href="styles/Pickup/pickup.css">
+    <link rel="stylesheet" href="styles/Why-Us/why-us.css">
+    <link rel="stylesheet" href="styles/Category/category.css">
+
+    <style>
+        :root {
+            --theme-color-1: #35012B;
+            --theme-color-2: #7D105B;
+            --category-theme-1: #f0c541;
+            --category-theme-2: #4b5563;
+        }
+    </style>
+</head>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<body>
+    <script type="module" src="main.js"></script>
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Container for Both Navbars -->
+        <div class="navContainer w-full z-50">
+
+            <!-- Upper and smaller navbar -->
+            <nav class="bg-[color:var(--theme-color-1)] flex justify-between items-center px-[20vw] text-white">
+                <div class="contact flex items-center gap-[clamp(10px,3.5vw,10rem)]">
+                    <div class="mobile">
+                        <i class="fa-solid fa-phone mr-1"></i> 878-9671-4455
+                    </div>
+                    <div class="address">
+                        <i class="fa-solid fa-location-dot mr-1"></i>Sector 25, Chandigarh
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+                <div class="button flex gap-[clamp(10px,3vw,10rem)]">
+                    <div class="login cursor-pointer">
+                        <i class="fa-solid fa-user"></i> Login
+                    </div>
+                    <div class="register cursor-pointer">
+                        Register
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Lower and Bigger Navbar -->
+            <nav class="bg-black flex justify-between py-9 px-[5vw] text-white items-center lower">
+                <div class="logo "><img
+                        src="https://motors.stylemixthemes.com/rent-a-car/wp-content/uploads/sites/7/2017/01/motors_car_rental_logo.svg"
+                        alt="Logo"></div>
+                <div class="sections flex gap-[50px]">
+                    <div class="floatingNavElement p-2 relative">
+                        <div class="home section absolute"><a href="#index">Home</a></div>
+                    </div>
+                    <div class="floatingNavElement p-2 relative">
+                        <div class="Rentable section"><a href="#">Rentable</a></div>
+                    </div>
+                    <div class="floatingNavElement p-2 relative">
+                        <div class="AboutUs section"><a href="#">About Us</a></div>
+                    </div>
+                    <div class="floatingNavElement p-2 relative">
+                        <div class="Renting section"><a href="#">Rent</a></div>
+                    </div>
+                    <div class="floatingNavElement p-2 relative">
+                        <div class="contactus section"><a href="#">Contact Us</a></div>
+                    </div>
+                </div>
+                <div class="number">
+                    <i
+                        class="fa-solid fa-phone bg-[color:var(--theme-color-2)] mr-2 rounded-full p-3 text-white"></i>878-9671-4455
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Body -->
+        <main>
+            <!-- Hero Section -->
+            <div class="hero-section flex h-[70vh]">
+
+                <!-- Text Side -->
+                <div
+                    class="text-container w-1/2 h-full relative flex flex-col gap-4 justify-center items-center px-[clamp(10px,5vw,10rem)]">
+
+                    <!-- Text Content except Button -->
+                    <div class="text-content text-[clamp(3rem,4vw,100rem)]">
+                        <div class="heading">
+                            <span>Want to</span>
+                            <span class="text-[color:var(--theme-color-2)] colourful-span"> find the
+                                <!-- Dynamic text -->
+                                <div>
+                                    <span class="dynamic"></span>
+                                    <span
+                                        class="cursor h-full select-none bg-[color:var(--theme-color-2)]">&nbsp;</span>
+                                </div>
+                            </span>
+                            <div>
+                                you want when you need it?
+                            </div>
+                        </div>
+                        <!-- Smaller Paragraph -->
+                        <p class="text-xl font-light">
+                            Do you want to discover the best service for you? Renting Buddies is the perfect place for
+                            this.
+                        </p>
+                    </div>
+
+                    <!-- Discover Button -->
+                    <button class="text-lg px-4 py-2 bg-[color:var(--theme-color-2)] text-white rounded-3xl self-start">
+                        Discover
+                    </button>
+
+                    <!-- Floating Div for design -->
+                    <div
+                        class="floating w-[80vw] aspect-square bg-[color:var(--theme-color-2)] opacity-15 absolute -z-10 rotate-45 translate-x-[-50%] translate-y-[-20%]">
+                    </div>
+                </div>
+
+                <!-- Swift Car Image -->
+                <div class="pickup w-1/2  h-full bg-no-repeat bg-center bg-contain"
+                    style="background-image: url(/Images/swift-right-front-three-quarter.webp); ">
+                </div>
+            </div>
+            <div class="why-us flex flex-col justify-center items-center relative overflow-hidden">
+                <h1 class="text-[clamp(1.5rem,2.5vw,10rem)] uppercase py-14">Why Choose Us</h1>
+                <div class="points-container  flex flex-wrap px-[clamp(15px,3vw,10rem)] justify-center items-center">
+                </div>
+            </div>
+            <div class="impact relative  flex justify-center items-center py-10">
+                <div
+                    class="rotating-floating bg-[color:var(--theme-color-2)] opacity-15 rotate-12 w-[50vw] h-[60vh] my-24 rounded-[600px] mx-auto">
+                </div>
+            </div>
+            <div class="vehicle-categories bg-fixed bg-cover px-8 py-6 flex flex-col"
+                style="background-image: url(Images/Parking.jpeg);">
+                <h1 class="uppercase mx-auto text-white text-2xl ">Vehicle Categories</h1>
+                <div class="card-container flex flex-wrap px-[clamp(3rem,10vw,100rem)] py-32 gap-10 ">
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Scripts -->
+<script src="Scripts/navbar.js"></script>
+<script src="Scripts/HomeSection.js" type="module"></script>
+<script src="Scripts/WhyUs.js"></script>
+<script src="Scripts/Category.js"></script>
+
+</html>
