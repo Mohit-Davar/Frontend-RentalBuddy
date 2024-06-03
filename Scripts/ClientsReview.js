@@ -24,7 +24,7 @@ ClientSwiper.addEventListener("mousemove", (e) => {
     ClientCursor.style.display = "flex"
     gsap.to(ClientCursor, {
         x: e.clientX,
-        y: e.clientY,
+        y: e.clientY+80,
         ease: "ease.out"
     })
 })
