@@ -30,7 +30,7 @@ function ChangeText(Text) {
     return (
         PreLoader.innerHTML = `<div class="text absolute flex justify-center items-center gap-2">
             <i class="fa-solid fa-circle"></i>
-            <h1 class="text-[5vw]"> ${Text}</h1>
+            <h1 class="text-[clamp(3rem,5vw,100rem)]"> ${Text}</h1>
         </div>`
     )
 }
