@@ -66,6 +66,7 @@ nav {
         font-family: "Archivo Black", sans-serif;
         font-weight: 400;
         font-style: normal;
-        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        top: -100vh;
+        transition: 6s linear;
     }
 }

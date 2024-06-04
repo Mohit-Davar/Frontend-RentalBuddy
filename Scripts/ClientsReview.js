@@ -13,6 +13,10 @@ const swiper = new Swiper(".mySwiper", {
         }
 
     },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
 });
 
 
@@ -24,7 +28,7 @@ ClientSwiper.addEventListener("mousemove", (e) => {
     ClientCursor.style.display = "flex"
     gsap.to(ClientCursor, {
         x: e.clientX,
-        y: e.clientY+80,
+        y: e.clientY + 80,
         ease: "ease.out"
     })
 })

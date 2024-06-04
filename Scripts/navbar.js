@@ -56,7 +56,7 @@ let mobileNav = document.querySelector(".mobile");
 // Function to toggle mobile navigation
 function toggleMobileNav() {
     const isOpen = mobileNav.style.top === '0px';
-    mobileNav.style.top = isOpen ? '-100%' : '0';
+    mobileNav.style.top = isOpen ? '-100vh' : '0';
     button.style.position = isOpen ? 'absolute' : 'fixed';
 }
 

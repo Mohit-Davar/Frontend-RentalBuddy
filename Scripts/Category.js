@@ -39,9 +39,9 @@ class VehicleCategory {
 //Database of Different VehicleCategories
 const VehicleCategories = [
     new VehicleCategory("Economy", "Maruti Suzuki and Similar", "25", "5", "4", "Images/Dezire.png"),
-    new VehicleCategory("EV", "Tata Punch and Similar", "55", "5", "4", "Images/PunchEv.png"),
-    new VehicleCategory("SUV", "Fortuner and Similar", "60", "7", "4", "Images/FortunerWhite.png"),
-    new VehicleCategory("Offroad", "Thar and Similar", "70", "4", "4", "Images/Thar.png"),
+    new VehicleCategory("EV", "Tata Punch and Similar", "55", "5", "4", "Images/PunchEvUpdated.png"),
+    new VehicleCategory("SUV", "Fortuner and Similar", "60", "7", "4", "Images/FortunerWhiteUpdated.png"),
+    new VehicleCategory("Offroad", "Thar and Similar", "70", "4", "4", "Images/TharUpdated.png"),
     new VehicleCategory("Luxury", "Bentley and similar", "100", "4", "4", "Images/Bentley.png"),
     new VehicleCategory("Premium", "BMW and Similar", "200", "2", "2", "Images/BMW.png"),
     // new VehicleCategory("Hoor","European and Similar","1000","2","4","Images/Dani.jpg")

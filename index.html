@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="styles/Impact/impact.css">
     <link rel="stylesheet" href="styles/ClientReview/client-review.css">
     <link rel="stylesheet" href="styles/Footer/footer.css">
+    <link rel="stylesheet" href="styles/Loader/loader.css">
+    <link rel="stylesheet" href="styles/FAQ/faq.css">
 
     <!-- SwiperJS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -47,12 +49,7 @@
         }
     </script>
     <!-- Linking Main JS -->
-    <script type="module" src="main.js"></script>
-    <style>
-        #loader {
-            transition: .5s linear;
-        }
-    </style>
+    <!-- <script type="module" src="main.js"></script> -->
 </head>
 
 <!-- Tailwind CDN -->
@@ -68,9 +65,9 @@
             <h1 class="text-[clamp(3rem,5vw,100rem)]">Welcome</h1>
         </div>
     </div>
-    
+
     <!-- Main Container -->
-    <div class="main hidden" data-scroll-container>
+    <div class="main hidden " data-scroll-container>
         <!-- Footer -->
         <footer class="bg-black w-screen h-screen fixed overflow-hidden flex flex-col">
             <div class="footer-floating-one -z-20"></div>
@@ -154,7 +151,7 @@
 
                 <!-- Mobile Navbar -->
                 <nav
-                    class="mobile  -top-full left-0  w-screen flex flex-col gap-6 justify-center items-center z-20 py-12 fixed text-[color:var(--theme-color-2)] bg-white text-xl">
+                    class="mobile  top-[-100vh] left-0  w-screen flex flex-col gap-6 justify-center items-center z-20 py-12 fixed text-[color:var(--theme-color-2)] bg-white text-xl">
                     <div class="Home">Home</div>
                     <div class="Rent">Rent</div>
                     <div class="Rentable">Rentable</div>
@@ -293,13 +290,23 @@
                     <div class="swiper w-full mySwiper">
                         <div class="swiper-wrapper">
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="bg-white w-full h-screen">
 
+                <!-- FAQ section -->
+                <div class="faq-section flex flex-col items-center gap-12">
+                    <div class="heading  text-[clamp(2rem,3vw,10rem)]  text-center">
+                        <p class="">Your Queries</p>
+                        <div class="font-bold gradient text-transparent bg-clip-text w-fit">
+                            <p>Our Solutions</p>
+                        </div>
+                    </div>
+                    <div class="faq-container  py-3">
+                    </div>
                 </div>
             </main>
-            <div class="bg-transparent w-full h-screen pointer-events-none ">
+            <div class="w-full bg-transparent h-screen pointer-events-none ">
             </div>
         </div>
     </div>
@@ -317,6 +324,7 @@
 <!-- SwiperJS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
 <!-- Scripts -->
 <script src="Scripts/PreLoader.js"></script>
 <script src="Scripts/navbar.js"></script>
@@ -325,6 +333,6 @@
 <script src="Scripts/Impact.js"></script>
 <script src="Scripts/Category.js"></script>
 <script src="Scripts/ClientsReview.js"></script>
-
+<script src="Scripts/FAQ.js"></script>
 
 </html>
