@@ -4,13 +4,20 @@
   font-weight: 300;
   font-style: normal;
 }
+
 .hero-section .text-content div.heading span.colourful-span {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
 .hero-section .pickup p {
   font-family: "Rowdies", sans-serif;
   font-weight: 300;
   font-style: normal;
-}/*# sourceMappingURL=pickup.css.map */
+}
+
+.hero-section .pickup .heading {
+  background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+  -webkit-background-clip: text;
+}

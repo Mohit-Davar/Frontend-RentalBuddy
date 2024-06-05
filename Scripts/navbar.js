@@ -50,35 +50,3 @@ function handleSVGAnimation(){
 button.addEventListener("click", () => {
     handleSVGAnimation()
 });
-
-let mobileNav = document.querySelector(".mobile");
-
-// Function to toggle mobile navigation
-function toggleMobileNav() {
-    const isOpen = mobileNav.style.top === '0px';
-    mobileNav.style.top = isOpen ? '-100vh' : '0';
-    button.style.position = isOpen ? 'absolute' : 'fixed';
-}
-
-// Event listener for the hamburger button
-button.addEventListener("click", (e) => {
-    e.stopPropagation(); // Prevent event bubbling
-    toggleMobileNav();
-});
-
-// Event listener for mobile navigation links
-document.querySelectorAll('.mobile .Home, .mobile .Rent, .mobile .Rentable, .mobile .AboutUs, .mobile .ContactUs')
-    .forEach(link => {
-        link.addEventListener('click', () => {
-            toggleMobileNav();
-            handleSVGAnimation();
-        });
-    });
-
-// Event listener to close mobile navigation when clicking outside of it
-document.addEventListener('click', (e) => {
-    if (mobileNav.style.top === '0px' && !mobileNav.contains(e.target) && e.target !== button) {
-        toggleMobileNav();
-        handleSVGAnimation();
-    }
-});

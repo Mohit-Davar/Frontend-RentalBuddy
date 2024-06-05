@@ -49,7 +49,7 @@
         }
     </script>
     <!-- Linking Main JS -->
-    <script type="module" src="main.js"></script>
+    <!-- <script type="module" src="main.js"></script> -->
 </head>
 
 <!-- Tailwind CDN -->
@@ -117,19 +117,19 @@
                     <!-- Sections for different Pages -->
                     <div class="sections hidden lg:flex gap-[50px]">
                         <div class="floatingNavElement p-2 relative">
-                            <div class="home section absolute"><a href="#index">Home</a></div>
+                            <div class="home section absolute"><a href="index.html">Home</a></div>
                         </div>
                         <div class="floatingNavElement p-2 relative">
-                            <div class="Renting section"><a href="www.facebook.com">Rent</a></div>
+                            <div class="Renting section"><a href="Rent.html">Rent</a></div>
                         </div>
                         <div class="floatingNavElement p-2 relative">
-                            <div class="Rentable section"><a href="#">Rentable</a></div>
+                            <div class="Rentable section"><a href="Rentable.html">Rentable</a></div>
                         </div>
                         <div class="floatingNavElement p-2 relative">
                             <div class="contactus section"><a href="contactus.html">Contact</a></div>
                         </div>
                         <div class="floatingNavElement p-2 relative">
-                            <div class="AboutUs section"><a href="#">About Us</a></div>
+                            <div class="AboutUs section"><a href="aboutus.html">About Us</a></div>
                         </div>
                     </div>
                     <!-- Mobile Number -->
@@ -147,16 +147,6 @@
                             </path>
                         </svg>
                     </button>
-                </nav>
-
-                <!-- Mobile Navbar -->
-                <nav
-                    class="mobile  top-[-100vh] left-0  w-screen flex flex-col gap-6 justify-center items-center z-20 py-12 fixed text-[color:var(--theme-color-2)] bg-white text-xl">
-                    <div class="Home">Home</div>
-                    <div class="Rent">Rent</div>
-                    <div class="Rentable">Rentable</div>
-                    <div class="AboutUs">About Us</div>
-                    <div class="ContactUs">Contact Us</div>
                 </nav>
             </div>
 
@@ -201,8 +191,9 @@
                     </div>
                     <!-- 3D-Model -->
                     <div class="pickup w-full h-1/2 lg:w-1/2 lg:h-full flex-col hidden lg:block">
-                        <div class="text h-1/5 flex justify-center ">
-                            <p class="text-[clamp(3rem,4vw,100rem)] text-[color:var(--theme-color-2)] text-center">Ride
+                        <div class="text h-1/5 flex justify-center heading text-transparent bg-clip-text w-fit">
+                            <p class="text-[clamp(3rem,4vw,100rem)] text-center
+                            ">Ride
                                 Premier Cars</p>
                         </div>
                         <div class="model h-4/5">
@@ -323,6 +314,7 @@
 
 <!-- SwiperJS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 
 <!-- Scripts -->

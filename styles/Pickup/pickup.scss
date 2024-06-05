@@ -13,10 +13,16 @@
         }
     }
 
-    .pickup p {
-        font-family: "Rowdies", sans-serif;
-        font-weight: 300;
-        font-style: normal;
+    .pickup {
+        p {
+            font-family: "Rowdies", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .heading{
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+        }
     }
 
 }

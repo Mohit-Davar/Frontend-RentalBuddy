@@ -1,7 +1,7 @@
 .faq-section .gradient {
+
     background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
-    -webkit-background-clip: text;
-}
+    -webkit-background-clip: text;}
 
 .accordion {
     transition: 0.4s;
