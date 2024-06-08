@@ -77,7 +77,7 @@
 
             <!-- User Type Selection  -->
             <main
-                class="flex flex-col justify-center items-center lg:items-start text-white px-[clamp(15px,10vw,100rem)] py-14 gap-20"
+                class="flex flex-col justify-center items-center lg:items-start text-white px-[clamp(15px,10vw,100rem)] py-14 gap-20 min-h-screen"
                 id="category-main">
                 <div class="text text-center lg:text-left">
                     <h1 class="text-[color:var(--theme-color-2)] text-[clamp(1.5rem,1.5vw,20rem)]">Select what you can
@@ -95,9 +95,9 @@
             <!-- Driver Form -->
             <main class="justify-center items-center pt-12 hidden" id="driver-main">
                 <div
-                    class="form-container bg-white border-2 border-gold w-[80vw] py-10 px-[clamp(10px,3vw,100rem)] flex justify-center items-center flex-col gap-6 relative text-white">
+                    class="form-container lg:bg-transparent  border-2 border-gold w-[80vw] py-10 px-[clamp(10px,3vw,100rem)] flex justify-center items-center flex-col gap-6 relative text-white" style="background-image: url(Images/FormBGPic.png);">
                     <!-- BG Video -->
-                    <video autoplay muted loop id="myVideo" class="fixed top-0 left-0 min-h-full min-w-full">
+                    <video autoplay muted loop id="myVideo" class="hidden lg:block lg:fixed top-0 left-0 min-h-full min-w-full">
                         <source src="/Images/FormBG.mp4" type="video/mp4">
                     </video>
                     <h1 class="text-center text-[color:var(--theme-color-2)] text-2xl z-10">Register Yourself</h1>
@@ -119,14 +119,14 @@
                                         Personal
                                         Details</p>
                                     <div class="input-fields">
-                                        <div class="fullname flex justify-between gap-4 mb-5">
-                                            <div class="name w-1/2">
+                                        <div class="fullname flex justify-between lg:flex-row flex-col gap-4 mb-5">
+                                            <div class="name lg:w-1/2">
                                                 <label for="driverName"
                                                     class="block text-[color:var(--theme-color-2)] text-xl mb-1">Name</label>
                                                 <input type="text" name="Name[name]" id="driverName"
                                                     class="w-full bg-transparent border-2 border-white min-h-10 rounded-3xl outline-none px-5">
                                             </div>
-                                            <div class="surname w-1/2">
+                                            <div class="surname lg:w-1/2">
                                                 <label for="driverSurname"
                                                     class="block text-[color:var(--theme-color-2)] text-xl mb-1">Surname</label>
                                                 <input type="text" name="Name[surname]" id="driverSurname"
@@ -162,9 +162,9 @@
             
             <main class="justify-center items-center pt-12 hidden" id="vehicle-main">
                 <div
-                    class="form-container bg-white border-2 border-gold w-[80vw] py-10 px-[clamp(10px,3vw,100rem)] flex justify-center items-center flex-col gap-6 relative text-white">
+                    class="form-container bg-transparent border-2 border-gold w-[80vw] py-10 px-[clamp(10px,3vw,100rem)] flex justify-center items-center flex-col gap-6 relative text-white" style="background-image: url(Images/FormBGPic.png);">
                     <!-- BG Video -->
-                    <video autoplay muted loop id="myVideo" class="fixed top-0 left-0 min-h-full min-w-full">
+                    <video autoplay muted loop id="myVideo" class="hidden lg:block lg:fixed top-0 left-0 min-h-full min-w-full">
                         <source src="/Images/FormBG.mp4" type="video/mp4">
                     </video>
                     <h1 class="text-center text-[color:var(--theme-color-2)] text-2xl z-10">Rentout your Vehicle</h1>
@@ -182,14 +182,14 @@
                                         Personal
                                         Details</p>
                                     <div class="input-fields">
-                                        <div class="fullname flex justify-between gap-4 mb-5">
-                                            <div class="name w-1/2">
+                                        <div class="fullname flex flex-col lg:flex-row justify-between gap-4 mb-5">
+                                            <div class="name lg:w-1/2">
                                                 <label for="userName"
                                                     class="block text-[color:var(--theme-color-2)] text-xl mb-1">Name</label>
                                                 <input type="text" name="Name[name]" id="userName"
                                                     class="w-full bg-transparent border-2 border-white min-h-10 rounded-3xl outline-none px-5">
                                             </div>
-                                            <div class="surname w-1/2">
+                                            <div class="surname lg:w-1/2">
                                                 <label for="userSurname"
                                                     class="block text-[color:var(--theme-color-2)] text-xl mb-1">Surname</label>
                                                 <input type="text" name="Name[surname]" id="userSurname"
