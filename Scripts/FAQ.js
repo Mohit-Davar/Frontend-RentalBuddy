@@ -2,7 +2,12 @@ const faqContainer = document.querySelector(".faq-container")
 // function to add FAQ
 function GenerateFAQ(question, answer) {
     return (
-        faqContainer.innerHTML = faqContainer.innerHTML + ``
+        faqContainer.innerHTML = faqContainer.innerHTML + `<div class="query border-b border-b-white border-opacity-55 py-4" >
+        <button class="accordion sm:text-2xl flex justify-between gap-4 w-full text-left">${question} <i class="fa-solid fa-chevron-down "></i></button>
+        <div class="panel sm:text-xl max-h-0 overflow-hidden">
+            <p>${answer}</p>
+        </div>
+    </div>`
     )
 }
 // Class FAQ

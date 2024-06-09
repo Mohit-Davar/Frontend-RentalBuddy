@@ -35,10 +35,15 @@ function ChangeText(Text) {
     )
 }
 let i = 0;
+const PreLoaderInterval = setInterval(() => {
+    if (i < languages.length) {
+        ChangeText(languages[i])
+    }
+    else{
+        clearInterval(PreLoaderInterval)
+    }
+    i++
+}, ChangeTime)
 setTimeout(() => {
-    setInterval(() => {
-        if (i < languages.length)
-            ChangeText(languages[i])
-        i++
-    }, ChangeTime)
+    PreLoaderInterval()
 }, DelayTime)
