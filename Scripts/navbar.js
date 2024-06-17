@@ -36,7 +36,9 @@ floatingNavElements.forEach(Element => {
 
 //Hmaburger Menu
 let button = document.querySelector(".button-three");
-function handleSVGAnimation(){
+let mobileNav = document.querySelector(".mobile");
+let displayed = false
+function handleSVGAnimation() {
     const currentState = button.getAttribute("data-state");
 
     if (!currentState || currentState === "closed") {
@@ -47,6 +49,43 @@ function handleSVGAnimation(){
         button.setAttribute("aria-expanded", "false");
     }
 }
-button.addEventListener("click", () => {
-    handleSVGAnimation()
+
+// Function to toggle mobile navigation
+function toggleMobileNav() {
+    if (!displayed) {
+        mobileNav.style.top = "0px";
+        mobileNav.style.borderRadius = "0px 0px 0px 0px"
+        button.style.position="fixed"
+        button.querySelector("svg").style.stroke="black"
+        displayed = true
+    } else {
+        mobileNav.style.top = "-200%";
+        mobileNav.style.borderRadius = "0px 0px 40% 40%"
+        button.style.position="absolute"
+        button.querySelector("svg").style.stroke="#d8ab21"
+        displayed = false
+    }
+}
+// Event listener for the hamburger button
+button.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent event bubbling
+    toggleMobileNav();
+    handleSVGAnimation();
+});
+
+// Event listener for mobile navigation links
+document.querySelectorAll('.mobile .Home, .mobile .Rent, .mobile .Rentable, .mobile .AboutUs, .mobile .ContactUs')
+    .forEach(link => {
+        link.addEventListener('click', () => {
+            toggleMobileNav();
+            handleSVGAnimation()
+        });
+    });
+
+// Event listener to close mobile navigation when clicking outside of it
+document.addEventListener('click', (e) => {
+    if (mobileNav.style.top === '0px' && !mobileNav.contains(e.target) && e.target !== button) {
+        toggleMobileNav();
+        handleSVGAnimation()
+    }
 });

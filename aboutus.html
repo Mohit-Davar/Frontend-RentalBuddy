@@ -61,48 +61,68 @@
 <body>
     <nav>
         <div class="bg-black navContainer w-full relative">
-            <!-- PC Navbar -->
-            <nav
-                class="flex justify-between py-9 px-[5vw] items-center lower text-[color:var(--theme-color-2)] font-extrabold">
-                <!-- Logo -->
-<div class="logo z-10"><img
-                            src="Images/Logo.png"
-                            alt="Logo" class="w-[clamp(100px,10vw,10rem)]"></div>
-
-                <!-- Sections for different Pages -->
-                <div class="sections hidden lg:flex gap-[50px]">
-                    <div class="floatingNavElement p-2 relative">
-                        <div class="home section absolute"><a href="index.html">Home</a></div>
+            <!-- Navbar -->
+            <div class="bg-black navContainer w-full relative">
+                <!-- Mobile Navbar -->
+                <nav
+                    class="fixed w-full h-[600px] bg-[color:var(--theme-color-2)] z-40 mobile flex flex-col   items-center justify-center gap-20 text-xl text-black">
+                    <a href="index.html" class="Home">
+                        <p>Home</p>
+                    </a>
+                    <a href="Rent.html" class="Rent">
+                        <p>Rent</p>
+                    </a>
+                    <a href="Rentable.html" class="Rentable">
+                        <p>Rentable</p>
+                    </a>
+                    <a href="contactus.html" class="ContactUs">
+                        <p>Contact</p>
+                    </a>
+                    <a href="about.html" class="AboutUs">
+                        <p>About Us</p>
+                    </a>
+                </nav>
+                <!-- PC Navbar -->
+                <nav
+                    class="flex justify-between py-9 px-[5vw] items-center lower text-[color:var(--theme-color-2)] font-extrabold">
+                    <!-- Logo -->
+                    <div class="logo z-10"><img src="Images/Logo.png" alt="Logo" class="w-[clamp(100px,10vw,10rem)]">
                     </div>
-                    <div class="floatingNavElement p-2 relative">
-                        <div class="Renting section"><a href="Rent.html">Rent</a></div>
+                    <!-- Sections for different Pages -->
+                    <div class="sections hidden lg:flex gap-[50px]">
+                        <div class="floatingNavElement p-2 relative">
+                            <div class="home section absolute"><a href="index.html">Home</a></div>
+                        </div>
+                        <div class="floatingNavElement p-2 relative">
+                            <div class="Renting section"><a href="Rent.html">Rent</a></div>
+                        </div>
+                        <div class="floatingNavElement p-2 relative">
+                            <div class="Rentable section"><a href="Rentable.html">Rentable</a></div>
+                        </div>
+                        <div class="floatingNavElement p-2 relative">
+                            <div class="contactus section"><a href="contactus.html">Contact</a></div>
+                        </div>
+                        <div class="floatingNavElement p-2 relative">
+                            <div class="AboutUs section"><a href="aboutus.html">About Us</a></div>
+                        </div>
                     </div>
-                    <div class="floatingNavElement p-2 relative">
-                        <div class="Rentable section"><a href="Rentable.html">Rentable</a></div>
+                    <!-- Mobile Number -->
+                    <div class="number hidden xl:block">
+                        <i
+                            class="fa-solid fa-phone bg-[color:var(--theme-color-2)] mr-2 rounded-full p-3 text-white"></i>878-9671-4455
                     </div>
-                    <div class="floatingNavElement p-2 relative">
-                        <div class="contactus section"><a href="contactus.html">Contact</a></div>
-                    </div>
-                    <div class="floatingNavElement p-2 relative">
-                        <div class="AboutUs section"><a href="aboutus.html">About Us</a></div>
-                    </div>
-                </div>
-                <!-- Mobile Number -->
-                <div class="numberg hidden xl:block">
-                    <i
-                        class="fa-solid fa-phone bg-[color:var(--theme-color-2)] mr-2 rounded-full p-3 text-white"></i>878-9671-4455
-                </div>
-                <!-- Hamburger Menu -->
-                <button class="button-three lg:hidden z-30  right-10" aria-controls="primary-navigation"
-                    aria-expanded="false">
-                    <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120"
-                        width="50">
-                        <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
-                            d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
-                        </path>
-                    </svg>
-                </button>
-            </nav>
+                    <!-- Hamburger Menu -->
+                    <button class="button-three right-20 lg:hidden absolute z-50" aria-controls="primary-navigation"
+                        aria-expanded="false">
+                        <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120"
+                            width="50">
+                            <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
+                                d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+                            </path>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
         </div>
     </nav>
     <main class="bg-black relative">

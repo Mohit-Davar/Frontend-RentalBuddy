@@ -3,6 +3,7 @@
 
 nav {
     font-family: "Lexend", sans-serif;
+
     .section {
         position: relative;
         user-select: none;
@@ -42,11 +43,11 @@ nav {
         overflow: hidden;
 
         .hamburger {
-            transition: translate 0.5s, rotate 0.5s;
+            transition: translate 0.25s, rotate 0.25s;
         }
 
         .line {
-            transition: 0.5s;
+            transition: 0.25s;
             stroke-dasharray: 60 31 60 300;
         }
     }
@@ -61,11 +62,11 @@ nav {
         stroke-dashoffset: -90;
     }
 
-    .mobile {
-        font-family: "Archivo Black", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        top: -100vh;
-        transition: 6s linear;
-    }
+}
+.mobile {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    top: -200%; 
+    transition: all 0.25s linear;
 }
