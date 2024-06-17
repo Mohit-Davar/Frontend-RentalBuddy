@@ -1,0 +1,25 @@
+p {
+  background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+  color: rgba(182, 182, 182, 0.2);
+  position: relative;
+  font-size: clamp(1rem, 5vw, 100rem);
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pagination {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.name {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
