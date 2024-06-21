@@ -44,23 +44,23 @@ const Cars = [
 const Catalogue = document.querySelector('.card-container')
 function generateCatalogue(url, model, year, seats, door, bags, rate) {
     return (Catalogue.innerHTML = Catalogue.innerHTML + `
-    <div class="card bg-white w-[400px] aspect-square rounded-3xl border-4 border-[color:var(--theme-color-2)] flex flex-col pt-1">
-                        <div class="image w-full h-1/2 bg-center bg-contain bg-no-repeat rounded-3xl"
+    <div class="card bg-white  sm:w-[400px] sm:h-[400px] h-auto rounded-3xl border-4 border-[color:var(--theme-color-2)] flex flex-col pt-1">
+                        <div class="image w-full h-56 sm:h-1/2 bg-center bg-contain bg-no-repeat rounded-3xl"
                             style="background-image: url(${url});">
 
                         </div>
-                        <div class="text w-full h-1/2 px-5 py-3 flex flex-col gap-2">
+                        <div class="text w-full h-1/2 px-5 py-3 flex flex-col gap-2 sm:items-start items-center">
                             <div class="heading font-semibold">${model}</div>
                             <div class="year text-[color:var(--theme-color-2)]">${year}</div>
-                            <div><span class="cancellation text-green-600">Free cancellation up </span>to 48h before pick-up time</div>
+                            <div class="text-center"><span class="cancellation text-green-600">Free cancellation up </span>to 48h before pick-up time</div>
                             <div class="icons flex gap-2 items-center">
                                 <i class="fa-solid fa-user text-[color:var(--theme-color-2)]"></i> ${seats}
                                 <i class="fa-solid fa-door-open text-[color:var(--theme-color-2)]"></i> ${door}
                                 <i class="fa-solid fa-briefcase text-[color:var(--theme-color-2)]"></i> ${bags}
                             </div>
-                            <div class="price flex justify-between">
+                            <div class="price flex flex-col sm:flex-row justify-between sm:py-0 sm:gap-0 gap-2 py-2 w-full">
                                 <div class="amount flex justify-center items-center"><span class="text-[color:var(--theme-color-2)] text-2xl">$${rate}</span>/day</div>
-                                <div class="button bg-[color:var(--theme-color-2)] px-5 py-3 rounded-[50px] hover:bg-black hover:text-[color:var(--theme-color-2)] transition-all cursor-pointer">Rent Now</div>
+                                <div class="button bg-[color:var(--theme-color-2)] px-5 py-3 rounded-[50px] hover:bg-black hover:text-[color:var(--theme-color-2)] transition-all cursor-pointer text-center">Rent Now</div>
                             </div>
                         </div>
                     </div>

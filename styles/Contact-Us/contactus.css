@@ -203,6 +203,7 @@ main {
 
         flex-direction: column-reverse;
         width: 90vw;
+        box-shadow: none;
     }
 
     .container .contact-info,
