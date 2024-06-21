@@ -30,29 +30,12 @@
 <!-- StyleSheets Links -->
 <link rel="stylesheet" href="styles/Navbar/navbar.css">
 <link rel="stylesheet" href="styles/AboutUs/About.css">
-<body >
+
+<body>
     <nav>
         <div class="bg-black navContainer relative ">
             <!-- Navbar -->
             <!-- Mobile Navbar -->
-            <nav
-                class="fixed w-full h-[600px] bg-[color:var(--theme-color-2)] mobile flex flex-col items-center justify-center gap-20 text-xl text-black ">
-                <a href="index.html" class="Home">
-                    <p>Home</p>
-                </a>
-                <a href="Rent.html" class="Rent">
-                    <p>Rent</p>
-                </a>
-                <a href="Rentable.html" class="Rentable">
-                    <p>Rentable</p>
-                </a>
-                <a href="contactus.html" class="ContactUs">
-                    <p>Contact</p>
-                </a>
-                <a href="aboutus.html" class="AboutUs">
-                    <p>About Us</p>
-                </a>
-            </nav>
             <!-- PC Navbar -->
             <nav
                 class="flex justify-between py-9 px-[5vw] items-center lower text-[color:var(--theme-color-2)] font-extrabold">
@@ -83,15 +66,12 @@
                         class="fa-solid fa-phone bg-[color:var(--theme-color-2)] mr-2 rounded-full p-3 text-white"></i>878-9671-4455
                 </div>
                 <!-- Hamburger Menu -->
-                <button class="button-three right-10 lg:hidden absolute z-50" aria-controls="primary-navigation"
-                    aria-expanded="false">
-                    <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120"
-                        width="50">
-                        <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
-                            d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
-                        </path>
-                    </svg>
-                </button>
+                <a href="index.html">
+                    <button
+                        class="button right-10 lg:hidden absolute z-50 bg-[color:var(--theme-color-2)] text-black px-3 py-1 rounded-3xl">
+                        Home
+                    </button>
+                </a>
             </nav>
         </div>
     </nav>
