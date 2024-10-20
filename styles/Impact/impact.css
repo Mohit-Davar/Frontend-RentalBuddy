@@ -3,7 +3,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 .impact .impact .heading::before {
   content: "";
   width: 25%;
@@ -12,4 +11,4 @@
   position: absolute;
   bottom: -30%;
   left: 45%;
-}
+}/*# sourceMappingURL=impact.css.map */

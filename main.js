@@ -58,7 +58,7 @@ loader.load('scene.gltf', (gltf) => {
             child.receiveShadow = true;
         }
     });
-    mesh.position.set(0, 0, 0 );
+    mesh.position.set(0, 0, 0);
     scene.add(mesh);
 
     // document.getElementById('progress-container').style.display = 'none';
